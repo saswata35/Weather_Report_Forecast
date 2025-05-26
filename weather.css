@@ -1,0 +1,89 @@
+/* Base styling */
+h1{
+  color:rgb(29, 228, 19);
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #129bbd, #0f7492);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for the weather app */
+.weather-container {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #007bff;
+  transition: transform 0.3s ease;
+}
+
+.weather-container:hover {
+  transform: scale(1.02);
+}
+
+/* Input and button layout */
+input[type="text"] {
+  padding: 12px;
+  font-size: 16px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styling */
+button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Weather card for results */
+.weather-card {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border: 2px solid #129bbd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+  .weather-container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
